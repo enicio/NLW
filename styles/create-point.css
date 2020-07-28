@@ -1,0 +1,220 @@
+#page-create-point {
+
+width: 90%;
+max-width: 1100px;
+
+/* Alinhamento de caixa ( Pelo lado de fora da caixa) */
+margin: 0 auto;
+
+}
+
+#page-create-point header {
+
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-create-point header a {
+
+    color: var(--title-color);
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+
+}
+
+#page-create-point header a span {
+
+    margin-right: 16px;
+
+    display: flex;
+
+    background-image: url('../icones/arrow-left.svg');
+
+    width: 20px;
+    height: 24px;
+}
+
+#page-create-point form {
+
+    background-color: white;
+    margin: 80px auto;
+    
+    /*  preenchimento do campo de cadastro */
+    padding: 64px;
+    border-radius: 8px;
+
+    max-width: 730px;
+    
+}
+
+#page-create-point form h1 {
+
+    font-size: 36px;
+}
+
+#page-create-point form fieldset {
+
+    margin-top: 64px ;
+
+    border: 0;
+}
+
+#page-create-point form legend {
+
+    margin-bottom: 40px;
+}
+
+#page-create-point form legend h2 {
+
+    font-size: 24px;
+}
+
+#page-create-point form .field {
+
+    
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 24px;
+} 
+
+
+#page-create-point form .field-group {
+
+    display: flex;
+}
+
+#page-create-point form input,
+#page-create-point form select {
+
+    background-color: #f0f0f5;
+
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+
+    border-radius: 8px;
+
+    /* color: rgb(167, 152, 152); */
+
+    /* -- Define a linha preta que destaca o campo */
+    /*outline: none;*/
+
+}
+
+#page-create-point form select {
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#page-create-point form label {
+
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+/* Faz a separação dos campos Estado e Cidade. 
+   As propriedades se aplicam no campo apos o sina de "+"  */
+#page-create-point form .field-group .field + .field {
+
+    margin-left: 24px;
+}
+
+#page-create-point form button {
+
+    width: 260px;
+    height: 56px;
+
+    background-color: var(--primary-color);
+    border-radius: 8px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+
+    margin-top: 40px;
+
+    transition: backgound-color 400ms;
+}
+
+#page-create-point form button:hover {
+
+    background-color: #2fb86e;
+}
+
+.items-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px; 
+
+}
+
+.items-grid li {
+
+    background-color: #f5f5f5;
+    list-style: none;
+
+    border: 2px solid #f5f5f5 ;
+    border-radius: 8px;
+
+    height: 180px;
+
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+
+    cursor: pointer;
+
+}
+
+
+
+.items-grid li span {  
+
+    margin-top: 25px;
+    
+    flex: 1;
+   
+    
+    /* Ficou diferente do tutorial, com as duas propriedades abaixo 
+       o texto ficou deslocada para a esquerda e para baixo */
+    /*display: flex;*/
+    /*align-items: center;*/
+    text-align: center;
+
+    color: var(--title-color);
+    
+}
+
+
+/* Atenção ao formato "li.selected", isso indica que esta sendo configurado 
+    um paramento dentro da tag l1 */
+.items-grid li.selected {
+
+    background: #e1faec;
+    border:  2px solid #34cb79;
+}
+
+.items-grid li img,
+.items-grid li span {
+
+    pointer-events: none;
+}

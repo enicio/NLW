@@ -93,9 +93,8 @@ function handleSelectedItem(event) {
         //console.log(item)       
         return itemFound                   
     })   
-
-
     //console.log(alreadySelected)
+
     // Se ja estiver selecionado
     if (alreadySelected >= 0) {
         //Tirar da seleção
